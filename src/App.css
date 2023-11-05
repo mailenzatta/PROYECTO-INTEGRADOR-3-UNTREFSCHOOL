@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css");
+
+* {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+html {
+  min-height: 100%;
+  text-align: center;
+  background: rgb(200, 147, 201);
+  background: linear-gradient(
+    0deg,
+    rgba(200, 147, 201, 1) 0%,
+    rgba(163, 131, 196, 1) 50%,
+    rgba(54, 62, 127, 1) 100%
+  );
+}
+
+nav {
+  background-image: linear-gradient(
+      180deg,
+      rgba(69, 71, 134, 0.6979166666666667) 0%,
+      rgba(129, 107, 167, 0.19931722689075626) 50%,
+      rgba(69, 71, 134, 0.7) 100%
+    ),
+    url(assets/nubes.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  height: 4.5em;
+  padding: 1em;
+}
+
+#icono {
+  width: 40px;
+}
+
+#icono:hover {
+  transform: translateY(2px);
+}
+
+h1 {
+  font-weight: 400;
+  color: whitesmoke;
+  text-shadow: 0px 3px 5px black;
+}
+
+h6 {
+  margin: 0;
+}
+
+form,
+.div-cotizador {
+  margin: auto;
+  max-width: 900px;
+  background-color: white;
+  padding: 10px;
+  border-color: whitesmoke;
+  box-shadow: 26px 28px 15px -8px rgba(0, 0, 0, 0.15);
+  border-radius: 0.7rem;
+  font-weight: bolder;
+}
+
+label {
+  font-weight: 400;
+}
+
+/* select,
+input {
+  min-width: 50%;
+  width: 70%;
+} */
+
+#precioCotizado > p {
+  color: #9b4dca;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+#botonVolver {
+  font-weight: 800;
+  background-color: #9b4dca;
+  border-radius: 0.3em;
+  color: white;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 10px 30px;
+}
+
+#botonVolver:hover {
+  background-color: #606b77;
+  color: white;
+}
