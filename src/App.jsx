@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Historial from "./Historial";
-import Inicio from "./Inicio";
 import "./App.css";
+import Inicio from "./Inicio";
 
 function App() {
   return (

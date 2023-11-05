@@ -16,7 +16,7 @@ function SelectUbicaciones() {
     <>
       <label htmlFor="ubicaciones">Selecciona su ubicación:</label>
       <select name="ubicaciones" id="ubicaciones" onChange={handleChange}>
-        <option value=""></option>
+        <option value="">...</option>
         {ubicaciones.map((ubicacion) => (
           <option key={ubicacion.id} value={ubicacion.id}>
             {ubicacion.tipo}

@@ -15,8 +15,12 @@ function SelectPropiedades() {
   return (
     <>
       <label htmlFor="propiedades">Selecciona el tipo de propiedad:</label>
-      <select name="propiedades" id="propiedades" onChange={handleChange}>
-        <option value=""></option>
+      <select
+        name="propiedades"
+        id="propiedades"
+        onChange={handleChange}
+      >
+        <option value="">...</option>
         {propiedades.map((propiedad) => (
           <option key={propiedad.id} value={propiedad.id}>
             {propiedad.tipo}

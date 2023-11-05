@@ -35,6 +35,7 @@ ul {
   justify-content: space-between;
   height: 4.5em;
   padding: 1em;
+  margin-bottom: 1em;
 }
 
 #icono {
@@ -67,20 +68,25 @@ form,
   font-weight: bolder;
 }
 
+.div-cotizador {
+  text-align-last: center;
+}
+
 label {
   font-weight: 400;
 }
 
-/* select,
-input {
+select,
+#metros {
   min-width: 50%;
   width: 70%;
-} */
+}
 
 #precioCotizado > p {
   color: #9b4dca;
   font-weight: bold;
   font-size: x-large;
+  margin: 0.5em;
 }
 
 #botonVolver {
