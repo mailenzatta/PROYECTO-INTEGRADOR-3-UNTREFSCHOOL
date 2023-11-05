@@ -82,6 +82,12 @@ select,
   width: 70%;
 }
 
+.error {
+  color: red;
+  font-size: smaller;
+  margin-bottom: 1em;
+}
+
 #precioCotizado > p {
   color: #9b4dca;
   font-weight: bold;

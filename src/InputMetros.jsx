@@ -7,9 +7,7 @@ function InputMetros() {
   const handleChange = (event) => {
     const metrosSelected = event.target.value;
 
-    // // if (metrosSelected >= 20 && metrosSelected <= 500) {
     setForm({ ...form, metrosSelected });
-    // // }
   };
 
   return (
@@ -21,7 +19,7 @@ function InputMetros() {
         onChange={handleChange}
         min={20}
         max={500}
-        // placeholder="Ingresa un valor entre 20 y 500"
+        placeholder="Ingresa un valor entre 20 y 500"
       />
     </>
   );
