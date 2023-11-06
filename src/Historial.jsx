@@ -20,28 +20,41 @@ function Historial() {
   });
 
   const handleClick = () => {
-    Swal.fire({
-      title: "¿Estás seguro?",
-      html: "<h6>¡No podrás revertirlo!</h6>",
-      icon: "warning",
-      showCancelButton: true,
-      cancelButtonText: "<h3 class='bx bx-x'></h3>",
-      confirmButtonColor: "#9b4dca",
-      cancelButtonColor: "#e65959",
-      confirmButtonText: "<h3 class='bx bx-check'</h3>",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        Swal.fire({
-          title: "¡Eliminado!",
-          html: "<h6>Tu historial fue eliminado.</h6>",
-          icon: "success",
-          showConfirmButton: false,
-          timer: 2500,
-        });
-        localStorage.removeItem("historial");
-        setHistorialCotizaciones([]);
-      }
-    });
+    if (historialCotizaciones.length > 0) {
+      Swal.fire({
+        title: "¿Estás seguro?",
+        html: "<h6>¡No podrás revertirlo!</h6>",
+        icon: "warning",
+        showCancelButton: true,
+        cancelButtonText: "<h3 class='bx bx-x'></h3>",
+        confirmButtonColor: "#9b4dca",
+        cancelButtonColor: "#e65959",
+        confirmButtonText: "<h3 class='bx bx-check'</h3>",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            title: "¡Eliminado!",
+            html: "<h6>Tu historial fue eliminado.</h6>",
+            icon: "success",
+            showConfirmButton: false,
+            timer: 2500,
+          });
+          localStorage.removeItem("historial");
+          setHistorialCotizaciones([]);
+        }
+      });
+    } else {
+      Swal.fire({
+        position: "top-end",
+        icon: "warning",
+        html: "<h6>El historial está vacío</h6>",
+        showConfirmButton: false,
+        showCloseButton: true,
+        timer: 3500,
+        width: "260px",
+        toast: true,
+      });
+    }
   };
 
   const eliminarCotizacion = (index) => {
