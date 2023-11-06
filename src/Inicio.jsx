@@ -50,8 +50,9 @@ function Inicio() {
             icon: "success",
             html: "<h6>Guardado en historial</h6>",
             showConfirmButton: false,
+            showCloseButton: true,
             timer: 3500,
-            width: "240px",
+            width: "260px",
             toast: true,
           });
         });
